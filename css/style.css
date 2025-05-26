@@ -1,0 +1,149 @@
+/* Variables personnalisées */
+:root {
+    --primary-color: #009543;    /* Vert du drapeau */
+    --secondary-color: #fbde4a;  /* Jaune du drapeau */
+    --accent-color: #dc241f;     /* Rouge du drapeau */
+    --text-light: #ffffff;
+    --text-dark: #333333;
+}
+
+/* Styles généraux */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 149, 67, 0.8), rgba(220, 36, 31, 0.8)),
+                url('https://source.unsplash.com/1920x1080/?sport') no-repeat center center;
+    background-size: cover;
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Navbar personnalisée */
+.navbar {
+    background-color: var(--primary-color) !important;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--secondary-color) !important;
+}
+
+.nav-link {
+    color: var(--text-light) !important;
+}
+
+.nav-link.active {
+    color: var(--secondary-color) !important;
+}
+
+/* Carousel personnalisé */
+.carousel-item img {
+    object-fit: cover;
+    height: 500px;
+}
+
+.carousel-caption {
+    background: rgba(0, 149, 67, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Cards personnalisées */
+.card {
+    transition: transform 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    color: var(--primary-color);
+}
+
+/* Boutons personnalisés */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--text-light);
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--text-light);
+}
+
+.btn-outline-primary.active {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+}
+
+/* Footer personnalisé */
+footer {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color)) !important;
+}
+
+.social-links a {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+    color: var(--secondary-color) !important;
+}
+
+.social-links a:hover {
+    color: var(--text-light) !important;
+}
+
+/* Section partenaires */
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: 60vh;
+    }
+
+    .carousel-item img {
+        height: 300px;
+    }
+}
+
+/* Formulaire */
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(0, 149, 67, 0.25);
+}
+
+/* Modal */
+.modal-header {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+}
+
+.modal-header .btn-close {
+    color: var(--text-light);
+} 
